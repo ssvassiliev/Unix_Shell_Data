@@ -713,3 +713,10 @@ The shell first runs the command `find . -name '*.txt'`. It then replaces the $(
 `timeout 100` do it for 100 sec
 
 `timeout 100 nvidia-smi --query-gpu=index,utilization.gpu,utilization.memory --format=csv -l 1  -i 1`
+
+## Multicore namd demo simulation 
+
+Files are in `/home/svassili/demo/PSII_mdrun`
+To run:
+`run_salloc 8`
+`run_namd 8`
